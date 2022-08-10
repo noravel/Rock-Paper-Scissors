@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "UTF-8">
-        <title>Rock-Paper-Scissors</title>
-        <!-- external js file -->
-        <script src="script.js"></script>
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game: Rock-Paper-Scissors</title>
+<!-- link html to css in the header-->
 
-    </body>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameDiv">
+        <div id="header">
+            <h1 class="headerText" id="gameName">Rock Paper Scissors</h1>
+            <p class="headerText">Choose your weapons</p>
+            <p class="headerText">The winner is first to 5 points</p>
+        </div>
+        <!-- If I pack 3 button in 1 class in the opening div tag, when clicking on the button, textContent property
+        returns value of 3 buttons spontanously. Remember to define buttons with the same class, but don't pack them in 1 big class or id -->
+        <div>
+            <button class="choiceBtn" id="ROCK">ROCK</button>
+            <button class="choiceBtn" id="PAPER">PAPER</button>
+            <button class="choiceBtn" id="SCISSORS">SCISSORS</button>
+        </div>
+        <div id="result">
+            <p class="playerText" id="playerChoice">Player: </p>
+            <p class="computerText" id="computerChoice">Computer: </p>
+            <p class="resultText" id="roundResult">Result: </p>
+            <p class="scoreText" id="playerScore">Player Score: </p>
+            <p class="scoreText" id="computerScore">Computer Score: </p>
+        </div>
+    </div>
+    <!-- link html to js in the end of the html body -->
+    <script src="script.js"></script>
+</body>
 </html>
